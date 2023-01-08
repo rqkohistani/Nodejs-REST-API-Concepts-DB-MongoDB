@@ -8,7 +8,7 @@ This REST API allows you to create, read, update and delete employees and users 
 The employees json won't be updated. That is I designed it. However, the users json file will be updated. You can add, edit and delete users.
 
 <!-- Check out MongoDb repo -->
-## [2. Nodejs-REST-API-Concepts-DB-MongoDB](https://github.com/rqkohistani/Nodejs-REST-API-Concepts-DB-MongoDB)
+## [1. Nodejs-REST-API-Concepts-DB-Json](https://github.com/rqkohistani/Nodejs-REST-API-Concepts-DB-Json)
 
 ## Run the project
 
