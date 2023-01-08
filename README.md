@@ -1,4 +1,4 @@
-# Nodejs-REST-API-Concepts-DB-Json
+# Nodejs-REST-API-Concepts-DB-MongoDb
 
 Built a secure NodeJs REST API uses best API practice. Implemented JWT "AccessToken, refreshToken" and "Roles and permissions". The data are stored in JSON file.
 
