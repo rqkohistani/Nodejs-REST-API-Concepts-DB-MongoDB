@@ -1,22 +1,14 @@
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+const User = require("../model/User");
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
 
-const handleRefreshToken = (req, res) => {
+const handleRefreshToken = async (req, res) => {
   const cookies = req.cookies;
   if (!cookies?.jwt) return res.sendStatus(401);
   // NOTE: Status is chainable, res.status(401).send('Unauthorized'); However, sendStatus is not chainable, it is not possible to do res.sendStatus(401).send('Unauthorized');.
   const refreshToken = cookies.jwt;
   console.log("refreshToken", refreshToken);
 
-  const foundUser = usersDB.users.find(
-    (person) => person.refreshToken === refreshToken
-  );
+  const foundUser = await User.findOne({ refreshToken }).exec();
   if (!foundUser) return res.sendStatus(403); //Forbidden
   // evaluate jwt
 

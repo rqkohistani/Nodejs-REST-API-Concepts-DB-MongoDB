@@ -38,6 +38,34 @@
 					"response": []
 				},
 				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\":\"User2\",\r\n    \"pwd\": \"Aa$12345\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "refresh token",
 					"request": {
 						"method": "GET",
@@ -58,6 +86,25 @@
 				},
 				{
 					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout Copy",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -217,7 +264,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IlVzZXJFZGl0b3JBZG1pbiIsInJvbGVzIjpbMjAwMSwxOTg0LDUxNTBdfSwiaWF0IjoxNjczMDEyMTY5LCJleHAiOjE2NzMwMTI0Njl9.y_Q8ajYrAUgj8qeDRB9izGVFnP9mPRfMA20rwT4jOto",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySW5mbyI6eyJ1c2VybmFtZSI6IlVzZXIyIiwicm9sZXMiOlsyMDAxLDE5ODQsNTE1MF19LCJpYXQiOjE2NzMyNzI2NjYsImV4cCI6MTY3MzI3Mjk2Nn0.MLnA1EGgx0BWiv1W64E7N7Zo0wf-39iNfYcWByya67A",
 				"type": "string"
 			}
 		]

@@ -1,11 +1,15 @@
-# Nodejs-REST-API-Concepts-DB-MongoDb
+# Nodejs-REST-API-Concepts-DB-MongoDb with Mongoose: Async/await
 
-Built a secure NodeJs REST API uses best API practice. Implemented JWT "AccessToken, refreshToken" and "Roles and permissions". The data are stored in JSON file.
+[<img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" width="163px" />](https://github.com/rqkohistani/Nodejs-REST-API-Concepts-DB-MongoDB)
+
+**Deploy by clicking the button above**
+_Remember to add the .env variables in the deployed version_
 
 ## Description
 
-This REST API allows you to create, read, update and delete employees and users data. The employees file is located in the `./model/employees.json` file and the users file is located in the `./model/users.json` file.
-The employees json won't be updated. That is I designed it. However, the users json file will be updated. You can add, edit and delete users.
+This REST API allows you to create, read, update and delete employees and users data.
+
+[Live API URL ]
 
 <!-- Check out MongoDb repo -->
 ## [1. Nodejs-REST-API-Concepts-DB-Json](https://github.com/rqkohistani/Nodejs-REST-API-Concepts-DB-Json)
@@ -21,56 +25,21 @@ The employees json won't be updated. That is I designed it. However, the users j
 
 You can import the postman collection from the `./postmanCollection` folder.
 
-#### Available users
+### Configure MongoDb
 
-1. login with one of the user below
 
-    1.http://localhost:3500/auth
-
-        {
-          user: "UserOnly"
-          pwd: "Aa$12345"
-        }
-
-        {
-          user: "UserEditor"
-          pwd: "Aa$12345"
-        }
-
-        {
-          user: "UserEditorAdmin"
-          pwd: "Aa$12345"
-        }
+1. Register a user
 1. Other endpoints
 
-        .../register
+        .../auth
         .../refresh
         .../logout
 
 #### Employee endpoints
 
-    1. get all employees
-    1. get employee by id
-    1. create employee
-    1. update employee
-    1. delete employee
-
-### User Roles
-
-1. *UserOnly*: can only view the data and can not edit it.
-1. *UserEditor*: can view and edit the data.
-1. *UserEditorAdmin*: can view, edit and delete the data.
-
-1. JWT implementation
-    1. access token
-    1. refresh token
-
-1. Authentication
-1. Authorization
-1. Roles and permissions
-
-1. Database
-    1. JSON files
+    1. .../employees
+    1. .../employees/id
+    1. ...check postman collection
 
 #### Thank you for reading this documentation. I hope you enjoyed it
 
