@@ -1,6 +1,6 @@
 # Nodejs-REST-API-Concepts-DB-MongoDb with Mongoose: Async/await
 
-## NOTE FIX ALL FIXME: In the files if you attempting user apis via browser. You can use Desktop postman to test the apis
+## NOTE FIX ALL FIXME: In the files if you are attempting to use apis via browser. You can use Desktop postman to test the apis
 
 ## Description
 
