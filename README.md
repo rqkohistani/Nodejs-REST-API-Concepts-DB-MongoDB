@@ -9,7 +9,7 @@ This REST API allows you to create, read, update and delete employees and users 
 [Live API URL ]
 
 <!-- Check out MongoDb repo -->
-## [1. Nodejs-REST-API-Concepts-DB-Json](https://github.com/rqkohistani/Nodejs-REST-API-Concepts-DB-Json)
+
 
 ## Run the project
 
@@ -36,5 +36,7 @@ You can import the postman collection from the `./postmanCollection` folder.
     1. .../employees
     1. .../employees/id
     1. ...check postman collection
+
+## [1. Nodejs-REST-API-Concepts-DB-Json](https://github.com/rqkohistani/Nodejs-REST-API-Concepts-DB-Json)
 
 ## [My linkedIn](https://www.linkedin.com/in/rashed-qazizada-1b64b68a/)
