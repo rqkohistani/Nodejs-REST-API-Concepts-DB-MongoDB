@@ -37,6 +37,4 @@ You can import the postman collection from the `./postmanCollection` folder.
     1. .../employees/id
     1. ...check postman collection
 
-#### Thank you for reading this documentation. I hope you enjoyed it
-
 ## [My linkedIn](https://www.linkedin.com/in/rashed-qazizada-1b64b68a/)
