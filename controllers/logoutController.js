@@ -17,10 +17,12 @@ const handleLogout = async (req, res) => {
   }
 
   // Delete refreshToken in db
-  foundUser.refreshToken = "";
+  foundUser.refreshToken = foundUser.refreshToken.filter(
+    (rt) => rt !== refreshToken
+  );
   const result = await foundUser.save();
   console.log(result);
-  
+
   // FIXME: Currently the cookies are not deleted via the browser request. It works via postman.
   res.clearCookie("jwt", { httpOnly: true, sameSite: "None" });
   // FIXME: in production, set secure: true
